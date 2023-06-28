@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Web Page Blocked</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<meta name="viewport" content="initial-scale=1.0">
+<style>
+  #content {
+    border:3px solid#aaa;
+    background-color:#fff;
+    margin:1.5em;
+    padding:1.5em;
+    font-family:Tahoma,Helvetica,Arial,sans-serif;
+    font-size:1em;
+  }
+  h1 {
+    font-size:1.3em;
+    font-weight:bold;
+    color:#196390;
+  }
+  b {
+    font-weight:normal;
+    color:#196390;
+  }
+</style>
+</head>
+
+<script>
+var cat = "<category/>";
+if(cat === 'URL-redirect') {
+  window.location.href = "https://www.paloaltonetworks.com";
+} else {
+  document.getElementById("header").innerHTML = "Sorry, you don't have permission to view this site.";
+  document.getElementById("line1").innerHTML = "The following site has been blocked in accordance with company policy:";
+  document.getElementById("line2").innerHTML = "<p class=\"mall\">Please contact <a href=\"mailto:john.doe@acme.com\">IT_Security</a> if you think this page was blocked in error.</p>";
+}
+</script>
+
+<body bgcolor="DarkGray">
+<div id="content">
+<img align="center" src="https://assets.themuse.com/uploaded/companies/1480/small_logo.png?v=40049fe09d872c9212f571fdc12f2fc2262e08799805ff0ffa5442f3f3d1b9e0">
+<h1 id="header">Sorry, you don't have permission to view this site.</h1>
+<p id="line1">The following site has been blocked in accordance with company policy:</p>
+<p id="line2" class=\"mall\">Please contact <a href=\"mailto:john.doe@acme.com\">IT_Security</a> if you think this page was blocked in error.</p>
+<p><b>User:</b> <user/> </p>
+<p><b>URL:</b> <url/> </p>
+<p><b>Category:</b> <category/> </p>
+
+</div>
+</body>
+</html>
